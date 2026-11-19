@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="zh-TW" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>數位科技概論（上）期末統整與解題全攻略 | 資處科一仁 高于翔</title>
+  <meta name="description" content="資處科一仁26號高于翔專屬：數位科技概論（上）第3章至第6章習作本與隨堂測驗卷完整題目、詳細解題過程、核心考點與互動測驗系統。">
+  <link rel="stylesheet" href="site_assets/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg>">
+</head>
+<body>
+
+  <!-- Top Sticky Navigation Bar -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <div class="brand-icon">📚</div>
+        <div class="brand-info">
+          <h1>數位科技概論（上）期末統整與解題全攻略</h1>
+          <p>旗立資訊 (C221A3) 習作本 ＆ 隨堂測驗卷 全真題庫精解</p>
+        </div>
+      </div>
+
+      <div class="header-actions">
+        <span class="student-badge">
+          <span>🎓</span> 資處科一仁 26號 高于翔
+        </span>
+        <button id="theme-toggle" class="btn-icon" title="切換深色/淺色主題">🌙</button>
+        <button id="print-btn" class="btn-icon" title="列印或另存為PDF複習手冊">🖨️</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    
+    <!-- Hero Banner with Course Information & Summary Stats -->
+    <section class="hero-banner">
+      <div class="hero-title">
+        <span>🚀</span>
+        <span>期末考衝刺！高分題解與觀念脈絡總體檢</span>
+      </div>
+      <div class="hero-subtitle">
+        專為 <b>高于翔</b> 同學打造的數位科技概論全方位學習平台。完整收錄 <b>第3章（硬體）、第4章（軟體與網路）、第5章（系統運作與未來）、第6章（辦公室與影音軟體）</b> 之所有習作本題目、隨堂測驗卷、多元練習、填充架構圖表與填字遊戲，每題皆附核心觀念、推理過程、選項深入剖析與考前速記口訣！
+      </div>
+
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-val">103</div>
+          <div class="stat-lbl">單選試題精解</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-val">22</div>
+          <div class="stat-lbl">核心架構對照表</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-val">35</div>
+          <div class="stat-lbl">第 3 章 硬體題目</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-val">35</div>
+          <div class="stat-lbl">第 4 章 軟體與網路</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-val">23</div>
+          <div class="stat-lbl">第 5 章 運作與未來</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-val">10</div>
+          <div class="stat-lbl">第 6 章 辦公室與影音</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Study Mode Switcher Bar -->
+    <div class="mode-bar">
+      <div class="mode-switches">
+        <button class="mode-btn active" data-mode="study">
+          <span>📖</span> 解題精講模式
+        </button>
+        <button class="mode-btn" data-mode="quiz">
+          <span>✍️</span> 自我測驗刷題
+        </button>
+        <button class="mode-btn" data-mode="wrong">
+          <span>❌</span> 錯題與收藏本
+        </button>
+      </div>
+
+      <div id="quiz-score-badge" class="quiz-score-pill" style="display:none;">
+        <span>🎯</span>
+        <span id="score-text">已作答：0 題 ｜ 答對：0 題 ｜ 正確率：0%</span>
+      </div>
+    </div>
+
+    <!-- Chapter Navigation Tabs -->
+    <nav class="nav-tabs" aria-label="章節分頁切換">
+      <button class="nav-tab active" data-tab="all">
+        <span>🌟 全部總覽</span>
+        <span class="tab-badge">全部</span>
+      </button>
+      <button class="nav-tab" data-tab="ch3">
+        <span>🖥️ 第 3 章 硬體架構</span>
+        <span class="tab-badge">35題+練習</span>
+      </button>
+      <button class="nav-tab" data-tab="ch4">
+        <span>🌐 第 4 章 軟體與網路</span>
+        <span class="tab-badge">35題+填字</span>
+      </button>
+      <button class="nav-tab" data-tab="ch5">
+        <span>⚙️ 第 5 章 系統運作與未來</span>
+        <span class="tab-badge">23題+管理員</span>
+      </button>
+      <button class="nav-tab" data-tab="ch6">
+        <span>🎨 第 6 章 辦公室與影音</span>
+        <span class="tab-badge">10題+實作</span>
+      </button>
+      <button class="nav-tab" data-tab="cheatsheet">
+        <span>⚡ 考前速記天梯表</span>
+        <span class="tab-badge" style="background:#f59e0b; color:white;">秘笈</span>
+      </button>
+    </nav>
+
+    <!-- Search & Filters Row -->
+    <div class="filter-row">
+      <div class="search-box">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="search-input" placeholder="輸入關鍵字即時搜尋（例：SRAM, IaaS, 機器週期, 工作管理員, Type-C, FCFS）...">
+      </div>
+
+      <select id="type-filter" class="filter-select" aria-label="題型篩選">
+        <option value="all">📌 全部題型</option>
+        <option value="mcq">📝 選擇測驗題</option>
+        <option value="fillin">📘 填充題與比較表</option>
+        <option value="practice">🧩 多元練習與配對</option>
+        <option value="worksheet">🔬 學習單與實作</option>
+      </select>
+
+      <select id="source-filter" class="filter-select" aria-label="出處來源篩選">
+        <option value="all">📚 全部來源</option>
+        <option value="exercise">📒 習作本試題</option>
+        <option value="quiz">📋 隨堂測驗卷試題</option>
+        <option value="starred">★ 官方進階精解題</option>
+      </select>
+
+      <button id="btn-reset" class="btn-reset">重設條件</button>
+    </div>
+
+    <!-- Main Dynamic Content Container -->
+    <div id="app-container">
+      <!-- Injected by app.js -->
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer style="border-top:1px solid var(--border-color); background:var(--bg-secondary); padding:24px 0; margin-top:60px; text-align:center; font-size:0.88rem; color:var(--text-secondary);">
+    <div class="container">
+      <p style="font-weight:600; color:var(--text-primary); margin-bottom:6px;">
+        🎓 資處科一仁 26號 高于翔 專屬數位科技概論學習庫
+      </p>
+      <p>
+        取材範圍：旗立資訊《數位科技概論（上）》習作本（第3~6回）＆ 隨堂測驗卷（第3~5回）｜ 祝段考與統測榮獲滿分！💯
+      </p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="site_assets/study_data.js"></script>
+  <script src="site_assets/app.js"></script>
+</body>
+</html>
